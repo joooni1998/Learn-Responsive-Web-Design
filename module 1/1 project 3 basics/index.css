@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+}
+h1,h2, p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: #ffe600;
+}
+a:hover,
+a:focus {
+  color: aqua;
+}
+header, section {
+  padding: 50px;
+}
+
+header {
+
+  background: #ffe600;
+  color: #000;
+}
+.section-one {
+  background: black;
+  color: white;
+}
+
+.section-two  a {
+  color: black;
+}
+
+.section-two a:hover,
+.section-two a:focus {
+  color: #ffe600;
+}
+
+.section-one .btn {
+  display: inline-block;
+  color: black;
+  font-weight: bold;
+  background: #ffe600;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+.section-one .btn:hover {
+  background: white;
+}
+
+
+.section-two .btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: black;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.section-two .btn:hover {
+  background: yellow;
+  color: black;
+}

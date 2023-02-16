@@ -1,0 +1,49 @@
+body {
+  font-size: 16px;
+}
+
+
+h1 {
+  font-size: 45px;
+  text-align: center;
+  color: #2e7ad3;
+  font-weight: 900;
+  margin: 45px 0;
+}
+
+a {
+  color: #ff8000;
+  font-weight: bold;
+}
+a:hover,
+a:focus {
+  color: #108c90;
+}
+
+
+h2 {
+  color: #104c90;
+  font-size: 32px;
+  margin: 0 0 10px  0;
+}
+
+.blog-post {
+  font-size: large;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 450px;
+  background-color: #f1f1f1;
+  padding: 25px;
+}
+
+img {
+  width: 480px;
+  margin: 0 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 25px;
+}
+
+.read-more {
+  margin: 0;
+}
