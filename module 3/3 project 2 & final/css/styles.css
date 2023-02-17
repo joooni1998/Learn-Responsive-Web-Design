@@ -1,0 +1,179 @@
+/* vertical scrolling disapears */
+/* border box takes into account the padding, border. if the width or heigth is 200px and the padding is 30px with box-sizing: border-box; the total with will be 200px with the padding included without border box the width will be 200px of the with + 30px of the padding  */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #404040;
+  text-align: center;
+}
+/* typography */
+
+h1 {
+  margin: 0;
+
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+strong {
+  font-weight: 900;
+}
+.h2Text {
+  color: black;
+  margin-bottom: 0;
+}
+/* Dont use this in real projects, use classes */
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+  
+}
+h2 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.topText {
+  font-size: 0.625rem;
+  font-weight: 900;
+  margin-top: 0;
+  color: #f18119;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-top: 5PX solid #f18119;
+  border-image: linear-gradient(to right, #ff713b, #ffa51d) 1;
+}
+
+.finePrint {
+  font-size: .625rem;
+  letter-spacing: 1px;
+}
+
+.formDiv p {
+  margin-top: 0;
+}
+
+/* layout */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro {
+  background-color: #999999;
+  background-image: url(../image/darkRibs.jpeg);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  padding: 0 .5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.mainContent {
+  padding: 2em 1em;
+  background: #fff;
+}
+.intro > *,
+.mainContent {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Form */
+  .emailCollector {
+    width: 80%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input,
+  .btn {
+    width: 100%;
+    border-radius: 5px;
+
+    
+  }
+
+  input {
+    text-align: inherit;
+    padding: .25em;
+    font-family: inherit;
+    margin-bottom: .75em;
+    border: 1px solid;
+  }
+
+.btn {
+  display: inline-block;
+  background: #f18119;
+  padding: .65em 1.5em;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 0;
+}
+
+.btn-primary {
+  background-image: linear-gradient(to left, #ff713b, #ffa51d);
+  color: white;
+  transition: color 500ms;
+  transform: scale(1);
+  transition: transform 500ms;
+
+}
+.btn-primary:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+/* media queries */
+
+@media (min-width: 475px) {
+  body {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2, 
+  h1 + p {
+    font-size: 1.75rem;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .intro,
+  .mainContent {
+    width: 50%;
+    min-height: 100vh;
+  }
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,22 @@
+/* Use classes to style! */
+form {
+  background: #fff;
+  padding: 2em;
+  background: #ed4c4c;
+}
+
+input {
+  margin-bottom: 1em;
+  padding: .25em;
+  border: 0;
+}
+
+button[type="text"] {
+  background: #333;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+button:hover {
+  background: #404040;
+}
