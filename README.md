@@ -1,1 +1,1 @@
-Learn-Responsive-Web-Design with Kevin powell
+Learn Responsive Web Design with Kevin powell
