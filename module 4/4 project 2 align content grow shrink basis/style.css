@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #2c73d2;
+  color: #fff;
+  text-align: center;
+}
+
+.flexContainer {
+  border: 10px solid #f9f871;
+  width: 89%;
+  margin: 0 auto;
+  padding: .25em;
+  display: flex;
+
+  flex-wrap: nowrap;
+  /* justify-content: center; */
+  /* align-items: flex-end; */
+  /* align-content: space-between; */
+
+  /* Normal alignment as you see on shopping websites */
+
+  /* Work with multiple rows of content */
+  align-content: normal;
+  height: 200px;
+  justify-content: center;
+
+}
+
+.flexItem {
+  background: #8bee86;
+  margin: .5em;
+  padding: .5em;
+  color: #424656;
+  
+  width: 200px;
+  
+}
+
+.flexItem1 {
+  background: plum;
+  color: white;
+
+  /* flex shrink and grow 1 is default value if necessary will grow or shrink 0 is fixed and 2 will increase the rate  */
+  /* flex-grow: 0; */
+  /* flex-shrink: 2; */
+  flex-basis: 400px;
+  /* flex: grow shrink basis; */ 
+  /* flex: 0 1 auto; is the default */ 
+}
+
+.flexItem2 {
+  background: red;
+  /* flex-grow: 2; */
+  color: white;
+}
+
+.flexItem3 {
+  background: gold;
+  /* flex-grow: 1; */
+
+  /* ali only the selected value */
+  align-self: flex-end;
+}

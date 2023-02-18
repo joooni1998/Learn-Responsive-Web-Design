@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #2c73d2;
+  color: #fff;
+  text-align: center;
+}
+
+.flexContainer {
+  border: 10px solid #f9f871;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: .25em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flexItem {
+  background: #8bee86;
+  margin: .5em;
+  padding: .5em;
+  color: #424656;
+}
